@@ -4,17 +4,16 @@
 	"description": "Issue Tracker Boilerplate",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js",
+		"start": "nodemon server.js",
 		"test": "mocha --timeout 5000 --recursive --exit --ui tdd tests/"
 	},
 	"dependencies": {
 		"body-parser": "^1.19.0",
-		"chai": "^4.2.0",
-		"chai-http": "^4.3.0",
 		"cors": "^2.8.5",
 		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
-		"mocha": "^8.1.3"
+		"mongodb": "^6.8.0",
+		"mongoose": "^8.6.1"
 	},
 	"repository": {
 		"type": "git",
@@ -25,5 +24,10 @@
 		"hyperdev",
 		"express"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"chai": "^4.3.6",
+		"chai-http": "^4.3.0",
+		"mocha": "^9.2.2"
+	}
 }
